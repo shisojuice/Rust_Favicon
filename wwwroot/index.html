@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="FaviconGenerator&Checker" />
+    <title>FaviconGenerator&Checker</title>
+    <link rel="stylesheet" href="./index.css" />
+</head>
+<body>
+<h1>FaviconGenerator</h1>
+<input type="file" id="file_input"  accept="image/jpeg, image/png" />
+<br/>
+<div>
+    <input type="radio" id="color_nothing" name="rdo" value="nothing" checked />
+    <label for="color_nothing">何もしない</label>
+    <input type="radio" id="color_transparent" name="rdo" value="transparent" />
+    <label for="color_transparent">透過</label>
+    <input type="radio" id="color_white" name="rdo" value="white" />
+    <label for="color_white">不透過(背景白)</label>
+    <input type="radio" id="color_black" name="rdo" value="black" />
+    <label for="color_black">不透過(背景黒)</label>
+</div>
+<br/>
+<div>
+    ※画像の左上Pixelを基準に背景指定します
+</div>
+<br/>
+<div class="set_border">    
+    <div>
+        下記サイズが含まれるマルチアイコンが出力されます
+    </div>
+    <br/>
+    <div>
+        16x16,32x32,48x48,96x96,144x144,192x192,240x240,288x288
+    </div>
+    <br/>
+    <a href="https://developers.google.com/search/docs/appearance/favicon-in-search?hl=ja" rel="noopener noreferrer nofollow" target="_blank">
+        <strong>
+            ファビコンの設定|Google for Developers|developers.google.com
+        </strong>
+    </a>
+</div>
+<br/>
+<button id="GeneBtn" >生成(Generate)</button>
+<br/>
+<hr/>
+<h1>FaviconChecker</h1>
+<input type="file" id="file_checker"  accept="image/vnd.microsoft.icon" />
+<br/>
+<div class="set_border">    
+    favicon(.ico)に含まれるマルチアイコンのサイズを全て出力します
+</div>
+<br/>
+<button id="ChkBtn" >確認(Check)</button>
+<br/>
+<div id="checker_output">
+</div>
+<script type="module" src="./index.js"></script>
+</body>
+</html>
