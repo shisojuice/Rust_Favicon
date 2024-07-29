@@ -8,5 +8,5 @@ https://qiita.com/shisojuice/items/b81df8fd81b6dc0e8c7c
 
 Demoサイト
 
-https://rust-favicon.pages.dev
+https://shisojuice.github.io/Rust_Favicon/
 
